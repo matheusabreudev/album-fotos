@@ -54,20 +54,17 @@ describe('ToolbarComponent', () => {
         component.mostrarToolbar = true;
         component.mostrarBotaoVoltar = true;
       }
-      return true; // Retorna true indicando que a navegação foi bem-sucedida
+      return true;
     });
   
-    // Simulate a navigation to '/login'
     await router.navigateByUrl('/login');
     expect(component.mostrarToolbar).toBeFalse();
     expect(component.mostrarBotaoVoltar).toBeFalse();
   
-    // Simulate a navigation to '/other-url'
     await router.navigateByUrl('/other-url');
     expect(component.mostrarToolbar).toBeTrue();
     expect(component.mostrarBotaoVoltar).toBeFalse();
   
-    // Simulate a navigation to '/foto-list'
     await router.navigateByUrl('/foto-list');
     expect(component.mostrarToolbar).toBeTrue();
     expect(component.mostrarBotaoVoltar).toBeTrue();
