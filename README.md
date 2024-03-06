@@ -2,26 +2,32 @@
 
 Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-cli) na versão 10.2.4.
 
-## Servidor de Desenvolvimento
+## Instalação
 
-Execute `ng serve` para iniciar um servidor de desenvolvimento. Navegue até `http://localhost:4200/`. O aplicativo será recarregado automaticamente se você alterar qualquer um dos arquivos de origem.
+1 - Instalar o node 12.22.0.
+2 - Recomendo usar o nvm para gerenciar as versões do node instaladas, para instalar o node com o nvm basta utilizar o comando `nvm install 12.22.0`.
+3 - Instalar o angular cli utilizando o comando `npm i @angular/cli@10.2.4`.
+5 - Fazer o clone do projeto através do comando `git clone https://github.com/matheusabreudev/album-fotos.git`.
+6 - Abrir com sua IDE de preferência.
+7 - Abrir o terminal na pasta raiz e executar o comando `npm i`.
+8 - Utilizar o comando `ng serve` ou `ng s` para rodar o projeto em ambiente local.
+8 - Após isso basta ir a url `https://localhost:4200/login`
 
-## Geração de Código
+## Instruções
 
-Execute `ng generate component nome-do-componente` para gerar um novo componente. Você também pode usar `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Compilação
-
-Execute `ng build` para compilar o projeto. Os artefatos de compilação serão armazenados no diretório `dist/`. Use a flag `--prod` para uma compilação de produção.
+1 - Na tela de login tem a função de cadastro, basta acessar via click e realizar o cadastro.
+2 - Após realizar o cadastro basta acessar com o login e a senha cadastrada e navegar pelo album de fotografias.
 
 ## Executando testes unitários
 
 Execute `ng test` para executar os testes unitários via [Karma](https://karma-runner.github.io).
 
-## Executando Testes End-to-End
+## Regras aplicadas
 
-Execute `ng e2e` para executar os testes end-to-end via [Protractor](http://www.protractortest.org/).
-
-## Ajuda Adicional
-
-Para obter mais ajuda sobre o Angular CLI, use `ng help` ou consulte a página [Angular CLI Overview and Command Reference](https://angular.io/cli).
+1 - As páginas só podem ser acessadas se estiver logado, caso não esteja não é possível acessar via url.
+2 - A página de albuns mostra todos os albuns com a thumbnail da primeira foto.
+3 - Pode clicar em um album que o mesmo irá abrir e mostrar as 10 primeiras fotos do album.
+4 - Tem um botão de voltar disponível caso queira escolher outro album.
+5 - Tem um botão de logoff para deslogar do site e voltar a tela de login.
+6 - Todos os campos do cadastro são necessários de serem preenchidos.
+7 - Existe validação de usuário e email já cadastrados.
