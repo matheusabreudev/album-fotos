@@ -1,0 +1,32 @@
+.footer {
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+}
+
+.mat-toolbar {
+    background-color: #cecece;
+}
+
+.heart-icon {
+    color: #e74c3c; /* Cor do ícone de coração */
+}
+
+.smaller-font {
+    font-size: 0.7em; /* Tamanho de fonte menor */
+}
+
+.footer-left {
+    text-align: left; /* Alinhamento à esquerda */
+}
+
+.footer-right {
+    text-align: right; /* Alinhamento à direita */
+}

@@ -1,0 +1,12 @@
+<div class="albums" style="margin-top: 20px;">
+    <mat-card *ngFor="let album of albums" class="album-card" (click)="showPhotoList(album.id)">
+        <mat-card-header>
+            <mat-card-title>{{ album.title }}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="thumbnail-container">
+                <img mat-card-image [src]="album.thumbnailUrl" alt="Album Thumbnail" class="album-thumbnail">
+            </div>
+        </mat-card-content>
+    </mat-card>
+</div>
