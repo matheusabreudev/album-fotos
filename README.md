@@ -13,6 +13,13 @@ Este projeto foi gerado com o [Angular CLI](https://github.com/angular/angular-c
 8. Utilizar o comando `ng serve` ou `ng s` para rodar o projeto em ambiente local.
 9. Após isso basta ir a url `https://localhost:4200/login`
 
+## Usando pelo docker
+1. Instale o docker na sua maquina.
+2. Verifique se já tem wsdl instalado também.
+3. Vá na pasta raiz do projeto, abra o terminal e execute o comando `docker build -t album-fotografias .` detalhe, o comando realmente termina com ".".
+4. Quando terminar a execução do comando acima execute o seguinte comando `docker run -d -p 8080:80 album-fotografias`.
+5. Após isso basta ir a url `https://localhost:4200/login`
+
 ## Instruções de acesso
 
 - Na tela de login tem a função de cadastro, basta acessar via click e realizar o cadastro.
