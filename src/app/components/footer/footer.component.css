@@ -16,17 +16,17 @@
 }
 
 .heart-icon {
-    color: #e74c3c; /* Cor do ícone de coração */
+    color: #e74c3c;
 }
 
 .smaller-font {
-    font-size: 0.7em; /* Tamanho de fonte menor */
+    font-size: 0.7em;
 }
 
 .footer-left {
-    text-align: left; /* Alinhamento à esquerda */
+    text-align: left;
 }
 
 .footer-right {
-    text-align: right; /* Alinhamento à direita */
+    text-align: right;
 }
